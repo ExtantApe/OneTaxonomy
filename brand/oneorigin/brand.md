@@ -1,19 +1,19 @@
 # Brand
 
-OneTaxonomy, OnePhylogeny, OneLineage and OnePedigree are separate tools from one maker: the [OneOrigin suite](README.md). Like a tool family, they share a backbone and keep their own character. The rules are in the [suite guidelines](guidelines.md); the values below are also in [tokens.json](tokens.json), the marks are in [marks/](marks/), and the shared icon parts are in [icons/](icons/).
+OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree and OneFamily are separate tools from one maker: the [OneOrigin suite](README.md). Like a tool family, they share a backbone and keep their own character. The rules are in the [suite guidelines](guidelines.md); the values below are also in [tokens.json](tokens.json), the marks are in [marks/](marks/), and the shared icon parts are in [icons/](icons/).
 
 This is the canonical brand text. It lives in OnePhylogeny's `docs/oneorigin/`, and each tool carries a locked copy in `brand/oneorigin/`. Change it in OnePhylogeny, never in a copy.
 
 ## Palette
 
-The OneOrigin palette has its own colors, separate from the earlier ones still used by the app icons and the interface below. Approved by the owner on 2026-11-12. The values are in `palette` in [tokens.json](tokens.json).
+The OneOrigin palette has its own colors, separate from the earlier ones still used by the app icons and the interface below. The teal, cream and aubergine were approved by the owner on 2026-11-12. The five tool colors are option D, which the owner picked on 2026-11-15 when OneFamily made five tools (D206). The values are in `palette` in [tokens.json](tokens.json).
 
-| | OneTaxonomy | OnePhylogeny | OneLineage | OnePedigree |
-| --- | --- | --- | --- | --- |
-| Base | `#fc9583` | `#44a446` | `#3fb1e4` | `#907be8` |
-| Level 1 (one level away) | `#fdb5a8` | `#7cbf7e` | `#79c8ec` | `#b1a3ef` |
-| Level 2 (two levels away) | `#feccc3` | `#a5d3a6` | `#a3daf2` | `#cac0f4` |
-| Text, on white | `#a66256` (4.66:1) | `#388639` (4.53:1) | `#2c7ca0` (4.67:1) | `#7967c3` (4.62:1) |
+| | OneTaxonomy | OneLineage | OnePhylogeny | OnePedigree | OneFamily |
+| --- | --- | --- | --- | --- | --- |
+| Base | `#fb81ab` | `#1ecdef` | `#58ac66` | `#898beb` | `#e5b254` |
+| Level 1 (one level away) | `#fca7c4` | `#62dcf4` | `#8ac594` | `#acaef1` | `#edc987` |
+| Level 2 (two levels away) | `#fdc3d7` | `#93e7f7` | `#afd7b6` | `#c6c7f5` | `#f3daad` |
+| Text, on white | `#b05a78` (4.59:1) | `#137f94` (4.68:1) | `#43834e` (4.57:1) | `#6e6fbc` (4.50:1) | `#8e6e34` (4.74:1) |
 
 Shared by every tool:
 
@@ -23,33 +23,32 @@ Shared by every tool:
 | Center of the one | `#fbf8f2` cream | `#fbf8f2` cream |
 | Lines | `#363051` aubergine, 12.36:1 on white | `#ece6f2`, 14.30:1 on `#1c1820` |
 
-- **The tool colors form a tetradic rectangle**: two complementary pairs, coral and green, blue and violet. Teal sits apart as the shared accent.
+- **The tool colors are evenly spaced**: pink, cyan, green, violet and gold sit about 72 degrees apart around the color wheel. Teal sits apart as the shared accent, darker than all five.
 - **The one is teal with a cream center** in every mark: the selected rank, the sample, the person, the animal, and the suite's origin.
 - **Levels are shades.** Level 1 is the base 30% of the way to white, level 2 is 52% of the way. Siblings share a shade, and each level away from the one is a step lighter. In OneTaxonomy the ranks below are darker, so a parent and its child never match.
-- **Text uses the text color, never the base.** The bases are for fills: on white they reach only 2.15:1 (OneTaxonomy) to 3.40:1 (OnePedigree). Each text color is its base darkened in 2% steps until it reaches 4.5:1 on white.
+- **Text uses the text color, never the base.** The bases are for fills: on white they reach only 1.90:1 (OneLineage) to 3.02:1 (OnePedigree). Each text color is its base darkened in 2% steps until it reaches 4.5:1 on white.
 - **Lines are aubergine**, a deep shade of the palette's violet, so the structure belongs to the palette. On dark backgrounds they turn pale.
 
 ### Checks
 
 These are tests on the tokens and the marks, in `scripts/oneorigin.test.mjs`, so a change that breaks one fails the build:
 
-- **Colorblind distinctness.** Any two of the four tool colors and the one (light) are at least 15 apart (CIELAB ΔE), seen with normal vision and under protanopia, deuteranopia and tritanopia. Today: 40.6, 27.2, 16.9 and 16.9. The closest pairs are blue and violet (deuteranopia) and green and blue (tritanopia). The colorblind views use the Machado, Oliveira and Fernandes (2009) matrices at full severity.
+- **Colorblind distinctness.** Any two of the five tool colors and the one (light) are at least 15 apart (CIELAB ΔE), seen with normal vision and under protanopia, deuteranopia and tritanopia. Today: 41.5, 20.9, 22.0 and 21.3. The closest pairs are pink and cyan (protanopia) and green and the one (tritanopia). The colorblind views use the Machado, Oliveira and Fernandes (2009) matrices at full severity.
 - **Contrast.** Every text color is 4.5:1 or better on white. The one is 4.5:1 or better on white and on its cream center, and its dark version on both dark backgrounds (`#1c1820`, and `#12151b` in the apps). Lines are 3:1 or better on their background.
+- **The one on dark backgrounds.** The lighter teal `#3fb3a8` is at least 10 apart from every tool color, with each kind of vision. Today: 10.7, against green under tritanopia. The earlier palette reached only 7.0 here, which is part of why option D was picked. Still never draw the one without its cream center: the shape tells it apart too.
 - **The rule.** Level shades and text colors follow the rule above exactly.
 - **The marks.** Each mark is plain SVG, labelled, uses only palette colors for its background, and draws the one in teal with a cream center.
 
-A limit the checks don't cover: on dark backgrounds the one's lighter teal `#3fb3a8` and OneLineage's blue are only 7.0 apart under tritanopia. The cream center tells the one apart by shape, so never draw the one without it.
-
 ## Marks
 
-Five marks, each as light, dark and small SVGs in [marks/](marks/): `oneorigin`, `onetaxonomy`, `onephylogeny`, `onelineage` and `onepedigree`, as `<mark>-light.svg`, `<mark>-dark.svg` and `<mark>-small.svg`. They are drawn on a 200 × 200 view box, without a background.
+Six marks, each as light, dark and small SVGs in [marks/](marks/): `oneorigin`, `onetaxonomy`, `onelineage`, `onephylogeny`, `onepedigree` and `onefamily`, as `<mark>-light.svg`, `<mark>-dark.svg` and `<mark>-small.svg`. They are drawn on a 200 × 200 view box, without a background.
 
 - **Light** is for light backgrounds, and **dark** for dark ones: pale lines and the lighter teal.
 - **Small** is for 48 px and under. It has thicker lines and larger nodes, and OnePhylogeny drops its faint outer generation so it stays clean at icon size. It uses the light colors.
 - **One node size, always solid.** No faded or see-through nodes. The only exception is OnePhylogeny's faint outer generation, which shows that the tree goes on.
-- **Orientation follows each field.** The suite and OneTaxonomy read top-down from one origin. OnePhylogeny is a circular tree, OneLineage a spiral around a person, and OnePedigree reads like a pedigree certificate, with the animal on the left.
-- **The zoom chain.** OneTaxonomy is the widest view, then OnePhylogeny, OneLineage and OnePedigree each zoom closer in.
-- **The suite mark** grows from the one at the top to all four tool colors.
+- **Orientation follows each field.** The suite and OneTaxonomy read top-down from one origin. OneLineage is a tree of life that grows up from the one and fans into three main branches. OnePhylogeny is a circular tree, OneFamily a spiral around a person, and OnePedigree reads like a pedigree certificate, with the animal on the left.
+- **The zoom chain.** OneTaxonomy is the widest view, then OneLineage, OnePhylogeny, OnePedigree and OneFamily each zoom closer in. Tool colors and the suite mark follow this order.
+- **The suite mark** grows from the one at the top to all five tool colors.
 
 ## App icon
 

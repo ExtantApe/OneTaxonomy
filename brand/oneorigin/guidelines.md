@@ -26,7 +26,7 @@ They exist so the three tools feel like one suite and keep working together as t
 
 ### Palette and marks
 
-The OneOrigin palette and the five marks (the suite, OneTaxonomy, OnePhylogeny, OneLineage and OnePedigree) are in [brand.md](brand.md#palette), with the files in `marks/` and the values in `palette` in `tokens.json`. Approved by the owner on 2026-11-12. Use a tool's text color for text in its color, never the base. Draw the one in teal with its cream center, every time.
+The OneOrigin palette and the six marks (the suite, OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree and OneFamily) are in [brand.md](brand.md#palette), with the files in `marks/` and the values in `palette` in `tokens.json`. Approved by the owner on 2026-11-12. Use a tool's text color for text in its color, never the base. Draw the one in teal with its cream center, every time.
 
 The app icons and the interface colors below are the earlier ones. They stay until new ones are decided.
 
