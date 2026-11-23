@@ -4,13 +4,13 @@
     "repo": "https://github.com/ExtantApe/OnePhylogeny",
     "branch": "main",
     "path": "docs/oneorigin",
-    "commit": "d3fced13ab56a926f1728033f88ef013bc14e607"
+    "commit": "5a500a78ce67ae1999480f486b585bff0928d3f6"
   },
   "copy": "brand/oneorigin",
   "files": {
     "README.md": "sha256:2eb7a1eeb5ec58fc3b83b1ff7cc072c33973bbfde78952f9bc21239272d3b634",
     "brand.md": "sha256:6b73115507761730880b90b673949c0f88c90956f3846aacd97307e5b99c8550",
-    "guidelines.md": "sha256:a63a34cf2535f2b858b9c7852f05482d01533ab7812dc0c292f196d590bf3ab6",
+    "guidelines.md": "sha256:7d1e5396eee3c14696d821451755d2f125e65c2f51ab67aa95d91a656568eb5c",
     "icons/block.svg": "sha256:0ebfc31700e1e6ae1ed4c795fc83741503dcb42d73675d120ba3d6d9a0106c12",
     "icons/connector.svg": "sha256:3de223d5c838932db727dd05cd7b5469ef2a41f63b1c8e1543419dc19990f85f",
     "icons/heart-badge.svg": "sha256:65bad1c87b8537e6f7db0854a12ee83fb1b8be10ce9a48d103ca6503c96589db",

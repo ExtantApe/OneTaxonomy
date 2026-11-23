@@ -46,7 +46,7 @@ These apply wherever a mark appears: READMEs, sites, slides, cards and social im
 | Under 24 px | None: too small | None: too small |
 
 - **Several marks together.** Show them at the same size, each in its own square, lined up by the squares with the clear space between them. Don't recenter a drawing inside its square. Order them by the zoom chain: OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree, OneFamily, with the suite mark first or above them when it appears.
-- **Names beside marks.** Set a tool's name in the line color (aubergine on light, pale on dark) or in that tool's text color, never in its base color.
+- **Names beside marks.** Where you can set the text color, set a tool's name in the line color (aubergine on light, pale on dark) or in that tool's text color, never in its base color. Where you can't, as in a README or other Markdown on GitHub, the name stays in the page's own text color, which already meets contrast in both schemes. Don't swap the heading for a picture of the name to get the color: screen readers, search and copying need real text.
 - **Alt text.** When the tool's name is next to the mark, give the image empty alt text so screen readers don't say the name twice. A mark standing alone takes the tool's name as its alt text. Each SVG already carries a title and label.
 
 The app icons and the interface colors below are the earlier ones. They stay until new ones are decided.
