@@ -1,8 +1,8 @@
 # OneOrigin suite guidelines
 
-**Status: accepted by the owner on 2026-11-11 ("A: send it, accept guidelines (Recommended)").** Drafted 2026-11-04. These apply to OnePedigree, OneTaxonomy and OnePhylogeny, the [OneOrigin suite](README.md). The brand text that used to be hand-copied into each repo's `brand/README.md` now lives in [brand.md](brand.md), and the machine-readable values in [tokens.json](tokens.json). Each tool carries a locked copy of this folder (section 10).
+**Status: accepted by the owner on 2026-11-11 ("A: send it, accept guidelines (Recommended)").** Drafted 2026-11-04. These apply to the five tools of the [OneOrigin suite](README.md): OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree and OneFamily. OneLineage is coming soon: its repo holds the name, license and brand copy, with no code yet. The brand text that used to be hand-copied into each repo's `brand/README.md` now lives in [brand.md](brand.md), and the machine-readable values in [tokens.json](tokens.json). Each tool carries a locked copy of this folder (section 10).
 
-They exist so the three tools feel like one suite and keep working together as they change, while each stays its own and none depends on another.
+They exist so the tools feel like one suite and keep working together as they change, while each stays its own and none depends on another.
 
 **How to read this.** "Must" is a rule a pull request can fail on. "Should" is the default, and leaving it takes a stated reason. Section 9 shows where each tool stands today.
 
@@ -12,7 +12,7 @@ They exist so the three tools feel like one suite and keep working together as t
 - **Not shared:** each tool's purpose, layout and science.
 - **Independence:** each tool must install, run and release alone. No tool's core may depend on another tool. Shared look is copied under each tool's own prefix, so no tool needs another to render.
 
-## 2. Principles all three keep
+## 2. Principles every tool keeps
 
 1. **Science and display are separate.** Data lives in immutable, checksummed records. Views only project it.
 2. **Unknown stays unknown.** Missing values are reported and never guessed. Absence isn't evidence.
@@ -27,6 +27,27 @@ They exist so the three tools feel like one suite and keep working together as t
 ### Palette and marks
 
 The OneOrigin palette and the six marks (the suite, OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree and OneFamily) are in [brand.md](brand.md#palette), with the files in `marks/` and the values in `palette` in `tokens.json`. Approved by the owner on 2026-11-12. Use a tool's text color for text in its color, never the base. Draw the one in teal with its cream center, every time.
+
+### Using the marks
+
+These apply wherever a mark appears: READMEs, sites, slides, cards and social images. The app icons follow their own rules below. Added 2026-11-22 (K694).
+
+- **The art stays as drawn.** Must use the files in `marks/` unchanged. Don't recolor, redraw, stretch, rotate, crop or outline them, and don't add shadows or effects. Scale only, keeping the square.
+- **Light or dark.** Must use the light version on white and other light backgrounds, and the dark version on dark ones. Choose by the lines: the light version's aubergine `#363051` must reach at least 3:1 against the background, and the dark version's pale `#ece6f2` the same. Both were checked on white and on `#1c1820`.
+- **Plain backgrounds only.** Don't put a mark straight onto a tool color, a gradient or a photo, where some of its nodes would disappear. Put a plain light or dark panel behind it first, with the clear space below inside the panel.
+- **Clear space.** Measure from the edge of the mark's square, not from the drawing, because the drawings fill their squares unevenly. Keep at least a quarter of the mark's width clear on every side, so 24 px around a 96 px mark, with no text, other logos or edges inside it.
+- **Sizes.** Must not show a mark smaller than the table allows: below that the nodes run together. For favicons, menu bars and file lists, use the app's `brand/icon-small.svg` instead. In print, keep marks at least 10 mm wide.
+
+| Width on screen | On light backgrounds | On dark backgrounds |
+| --- | --- | --- |
+| Over 48 px | Light | Dark |
+| 32 to 48 px | Small | Dark |
+| 24 to 31 px | Small | None: too small |
+| Under 24 px | None: too small | None: too small |
+
+- **Several marks together.** Show them at the same size, each in its own square, lined up by the squares with the clear space between them. Don't recenter a drawing inside its square. Order them by the zoom chain: OneTaxonomy, OneLineage, OnePhylogeny, OnePedigree, OneFamily, with the suite mark first or above them when it appears.
+- **Names beside marks.** Set a tool's name in the line color (aubergine on light, pale on dark) or in that tool's text color, never in its base color.
+- **Alt text.** When the tool's name is next to the mark, give the image empty alt text so screen readers don't say the name twice. A mark standing alone takes the tool's name as its alt text. Each SVG already carries a title and label.
 
 The app icons and the interface colors below are the earlier ones. They stay until new ones are decided.
 
@@ -173,7 +194,7 @@ Each decision with alternatives gets an ADR. Limitations are kept current, and n
 
 ### Licensing
 
-- **The three One tools and their plugins:** PolyForm Noncommercial 1.0.0, with a `Required Notice` line in each `LICENSE`.
+- **The One tools and their plugins:** PolyForm Noncommercial 1.0.0, with a `Required Notice` line in each `LICENSE`.
 - **General Payload plugins:** MIT.
 - **Third-party notices** ship with the code that uses it.
 - **Bundled programs** keep their own licenses and run as separate programs.
@@ -204,7 +225,7 @@ Each decision with alternatives gets an ADR. Limitations are kept current, and n
 
 ## 9. Parity today
 
-From a review of the three repos on 2026-11-04, updated on 2026-11-07 after the Mac releases and OnePhylogeny's first npm publish. Bold marks what remains.
+From a review of the first three repos on 2026-11-04, updated on 2026-11-07 after the Mac releases and OnePhylogeny's first npm publish. Bold marks what remains. OneFamily joined the suite on 2026-11-14 and hasn't been reviewed against this table yet, so it has no column; OneLineage gets one when it has code.
 
 | Area | OnePedigree | OneTaxonomy | OnePhylogeny |
 | --- | --- | --- | --- |

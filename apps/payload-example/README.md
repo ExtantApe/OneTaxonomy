@@ -105,4 +105,4 @@ Set `DATABASE_URI` to a MongoDB address and the site uses it instead of the in-m
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](../../LICENSE). Source-available, not open source.
+[PolyForm Noncommercial 1.0.0](../../LICENSE). This license makes it source-available. It isn't an open source license.

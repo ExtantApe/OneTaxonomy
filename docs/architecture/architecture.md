@@ -2,7 +2,7 @@
 
 OneTaxonomy imports, curates, browses, rearranges the *presentation* of, and publishes scientifically faithful taxonomic classifications and phylogenetic trees. It is independent of any application: nothing here knows about a particular site, reptiles, Payload, Next.js or MongoDB.
 
-The authoritative specification is the *OneTaxonomy — Architecture & Implementation Specification* (v1.0, November 2026). This document records how the repository implements it. Decisions with alternatives are in [`adr/`](adr/), the rules every component must keep are in [`scientific-invariants.md`](scientific-invariants.md), and the record formats are in [`data-schema.md`](data-schema.md).
+The authoritative specification is the *OneTaxonomy: Architecture & Implementation Specification* (v1.0, November 2026). This document records how the repository implements it. Decisions with alternatives are in [`adr/`](adr/), the rules every component must keep are in [`scientific-invariants.md`](scientific-invariants.md), and the record formats are in [`data-schema.md`](data-schema.md).
 
 ## Layers
 
@@ -30,14 +30,14 @@ Dependencies only point downward. `core` has no runtime dependencies and compile
 
 | Package | Status | Depends on | Must never depend on |
 | --- | --- | --- | --- |
-| `core` | Milestone 2 | — | React, Payload, databases, Node-only APIs, Tauri, network |
+| `core` | Milestone 2 | none | React, Payload, databases, Node-only APIs, Tauri, network |
 | `import` | Milestone 2–3 | core | Payload, databases |
 | `layout` | Milestone 4 | core | rendering, storage |
 | `react` | Milestone 4 | core, layout | Payload, Next.js, network |
 | `education` | Milestone 5 | core | live networking |
-| `payload` | Milestone 7 (part 1, [ADR 0012](adr/0012-payload-plugin.md)) | core (import and react in later parts) | — (optional plugin; nothing else may depend on Payload) |
+| `payload` | Milestone 7 (part 1, [ADR 0012](adr/0012-payload-plugin.md)) | core (import and react in later parts) | none (optional plugin; nothing else may depend on Payload) |
 | `apps/studio` | Milestone 6 | core, import, layout, react, education | Payload, a hosted account |
-| `live`, `services/live-server` | Phase 2 | core | — (never required for offline use) |
+| `live`, `services/live-server` | Phase 2 | core | none (never required for offline use) |
 
 Packages that don't exist yet are listed in [`backlog.md`](backlog.md); there is no empty scaffolding.
 
@@ -51,7 +51,7 @@ Import pipeline (`import`): **read → parse → normalize → link names/concep
 
 ## Persistence and transport are adapters
 
-`core` defines records and pure functions over in-memory indexes. Where records are stored — plain JSON files and a `.onetaxonomy` bundle in Studio (no SQLite for now: [ADR 0011](adr/0011-bundle-not-sqlite.md); format in [bundle-format.md](bundle-format.md)), Payload collections or storage records in a CMS, static JSON in a website — is decided by the adapter packages. Large topologies are stored as whole snapshot records, not as millions of CMS documents.
+`core` defines records and pure functions over in-memory indexes. The adapter packages decide where records are stored: plain JSON files and a `.onetaxonomy` bundle in Studio (no SQLite for now: [ADR 0011](adr/0011-bundle-not-sqlite.md); format in [bundle-format.md](bundle-format.md)), Payload collections or storage records in a CMS, or static JSON in a website. Large topologies are stored as whole snapshot records, not as millions of CMS documents.
 
 ## Source ownership
 

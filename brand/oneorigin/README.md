@@ -1,14 +1,20 @@
+<picture><source media="(prefers-color-scheme: dark)" srcset="marks/oneorigin-dark.svg"><img src="marks/oneorigin-light.svg" alt="" width="96" height="96"></picture>
+
 # The OneOrigin suite
 
 **Good tools for understanding where animals come from, without a subscription.**
 
-OneOrigin is a suite of three independent tools from EXTANT APE. Each does one job well and works on its own. Use one, two or all three, in whatever combination fits your work.
+OneOrigin is a suite of five independent tools from EXTANT APE. Each does one job and works on its own. Use one or several, in whatever combination fits your work. They run from the widest view to the closest:
 
-| Tool | The question it answers |
-| --- | --- |
-| [OnePedigree](https://github.com/ExtantApe/OnePedigree) | How is this individual related to its known relatives? |
-| [OneTaxonomy](https://github.com/ExtantApe/OneTaxonomy) | What do sources claim about how life is organized, and how do we browse it? |
-| [OnePhylogeny](https://github.com/ExtantApe/OnePhylogeny) | Given DNA, what does the evidence support, and where does this sample fit? |
+| Tool | The question it answers | Today |
+| --- | --- | --- |
+| [OneTaxonomy](https://github.com/ExtantApe/OneTaxonomy) | What do sources claim about how life is organized, and how do we browse it? | Early alpha: npm packages, a Payload plugin and a Mac app |
+| [OneLineage](https://github.com/ExtantApe/OneLineage) | How do today's lineages branch from a shared origin? | Coming soon |
+| [OnePhylogeny](https://github.com/ExtantApe/OnePhylogeny) | Given DNA, what does the evidence support, and where does this sample fit? | Early alpha: npm packages, a Payload plugin, a command line and a Mac app |
+| [OnePedigree](https://github.com/ExtantApe/OnePedigree) | How is this individual related to its known relatives? | Early alpha: npm packages, a Payload plugin and a Mac app |
+| [OneFamily](https://github.com/ExtantApe/OneFamily) | Given my DNA matches, how might we be related? | Early: tested on made-up families only, and not released yet |
+
+Every one of them is early. Each repo's README opens with a status note that says what has been tested and what hasn't.
 
 ## Why this exists
 
@@ -33,21 +39,23 @@ No tool needs another. Connections are optional, and they use plain files or a s
 
 | You use | What you get | Today |
 | --- | --- | --- |
-| **OnePedigree alone** | Pedigrees for any species, with GEDCOM, CSV and JSON files | Mac app and npm packages |
-| **OneTaxonomy alone** | Curated classifications and trees, with views and lessons | npm packages and a playground; Mac app planned |
-| **OnePhylogeny alone** | Fetch records, build reference panels and test samples | Mac app and command line; npm planned |
-| **OnePhylogeny + OneTaxonomy** | Trees you build become hypotheses you can check and browse | Export package works; opening it in a OneTaxonomy Mac app is planned |
-| **OnePhylogeny + OnePedigree** | Check DNA results against recorded maternal lines, and report conflicts for review | Check package works; not yet in either app |
+| **OneTaxonomy alone** | Curated classifications and trees, with views and lessons | npm packages, a Payload plugin and a Mac app |
+| **OnePhylogeny alone** | Fetch records, build reference panels and test samples | npm packages, a Payload plugin, a command line and a Mac app |
+| **OnePedigree alone** | Pedigrees for any species, with GEDCOM, CSV and JSON files | npm packages, a Payload plugin and a Mac app |
+| **OneFamily alone** | Group your DNA matches, then weigh possible family trees with odds | Built and tested on made-up families; not released |
+| **OnePhylogeny + OneTaxonomy** | Trees you build become hypotheses you can check and browse | The export package works. OneTaxonomy's Mac app can't open an exported record yet |
+| **OnePhylogeny + OnePedigree** | Check DNA results against recorded maternal lines, and report conflicts for review | The check package works. Neither Mac app uses it yet |
+| **OneFamily + OnePedigree** | Family trees drawn with OnePedigree's views | Inside OneFamily's Mac app, on made-up data |
 | **OnePedigree + OneTaxonomy** | Pedigrees tied to a curated species list | Planned |
-| **All three** | From a species, to its lineages, to a named animal's family and DNA | Planned |
-| **Any of them on a website** | Payload plugins and React views on your own site | OnePedigree and OnePhylogeny published as alphas; OneTaxonomy planned |
+| **OneLineage with the others** | From a species, to its lineages, to a named animal's family and DNA | Coming soon |
+| **On a website** | Payload plugins and React views on your own site | OneTaxonomy, OnePhylogeny and OnePedigree, published as alphas |
 
 ## One suite, each its own
 
-The tools share a look, a way of behaving and a set of beliefs. Each keeps its own purpose, layout and color. Together they follow the [suite guidelines](guidelines.md), which turn this page into specific rules.
+The tools share a look, a way of behaving and a set of beliefs. Each keeps its own purpose, layout and color. Together they follow the [suite guidelines](guidelines.md), which turn this page into specific rules. The marks are in [marks/](marks/). The Mac apps still use their earlier icons.
 
 ## Names
 
 - **OneOrigin** is the name of the suite. It isn't a package or a product you install.
-- Each tool keeps its own name, repo and app.
+- Each tool keeps its own name and repo, and has or will have its own app.
 - Packages stay under each project's scope, such as `@extantape/onephylogeny-core`.

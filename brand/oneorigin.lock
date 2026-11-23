@@ -4,13 +4,13 @@
     "repo": "https://github.com/ExtantApe/OnePhylogeny",
     "branch": "main",
     "path": "docs/oneorigin",
-    "commit": "37453b0a346e22b62696ebd9480d8d739ddad5dc"
+    "commit": "d3fced13ab56a926f1728033f88ef013bc14e607"
   },
   "copy": "brand/oneorigin",
   "files": {
-    "README.md": "sha256:f8afbcd53fe2d32e5e85947cab9e0542e44073fe01e2fd1047ef6209276d5994",
+    "README.md": "sha256:2eb7a1eeb5ec58fc3b83b1ff7cc072c33973bbfde78952f9bc21239272d3b634",
     "brand.md": "sha256:6b73115507761730880b90b673949c0f88c90956f3846aacd97307e5b99c8550",
-    "guidelines.md": "sha256:8c6434b852cb7881919732b067e437b6d63f53933e3a7114794324a73fc4162d",
+    "guidelines.md": "sha256:a63a34cf2535f2b858b9c7852f05482d01533ab7812dc0c292f196d590bf3ab6",
     "icons/block.svg": "sha256:0ebfc31700e1e6ae1ed4c795fc83741503dcb42d73675d120ba3d6d9a0106c12",
     "icons/connector.svg": "sha256:3de223d5c838932db727dd05cd7b5469ef2a41f63b1c8e1543419dc19990f85f",
     "icons/heart-badge.svg": "sha256:65bad1c87b8537e6f7db0854a12ee83fb1b8be10ce9a48d103ca6503c96589db",
@@ -32,9 +32,9 @@
     "marks/onephylogeny-dark.svg": "sha256:f70d557dde34ab337aee9e2ed31e178962fca3561d277d3829d885ee4bdf5ac5",
     "marks/onephylogeny-light.svg": "sha256:09d49d062c03b121fe6b3be5209f1fb4f76ec5a182ae3931e9443c44d98042ea",
     "marks/onephylogeny-small.svg": "sha256:1ada155e5176bf46ea825d74c266b47168ff3e675d3b30151fb97b5a96e75291",
-    "marks/onetaxonomy-dark.svg": "sha256:73489c5de2da9ccb6ef02a5d2848c869f7223ffca984cc2dda06d7ee3bb9d9ac",
-    "marks/onetaxonomy-light.svg": "sha256:aa660f65fb500303cbbfad63e0b9290a02f4f1931a07d5258d4b1d9db76b1bd5",
-    "marks/onetaxonomy-small.svg": "sha256:dca347b3de7e356fe255cf49fbf2824773d8d05777b0a995e9586bc6b8f0d0a8",
+    "marks/onetaxonomy-dark.svg": "sha256:feaff9d12e6e554f587a2d9abbf2e3a8ad2417de1bbe5b19bec45006c7be071e",
+    "marks/onetaxonomy-light.svg": "sha256:6ea4a7cee8ab0a8305068bf8d1203b41bccecc91e91a96e4959bfbf1a0f9cee2",
+    "marks/onetaxonomy-small.svg": "sha256:1cc10576c0c61b96b8e686615a2c1bf77339754181a4b7cec18e57eb522449d6",
     "tokens.json": "sha256:6765b35d5a2ad58d8466202a94fe1c33e06e97025b6139840f49d980de59dec0",
     "tokens.schema.json": "sha256:e7e38666c36015eab49cb802448567137ef6e44870a335ffe34eb89ed9bea3cc"
   },
