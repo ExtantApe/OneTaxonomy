@@ -2,6 +2,12 @@
 
 Each audit lists what this repo promises, the tests that prove it, and the gaps: those closed in the same pass and those left, with why. Audits run after each feature or fix, and at least every 14 days while the repo has commits. Newest first.
 
+## 2026-11-22: the new app identifier
+
+- Promises: the Mac app's identifier is `com.extantape.onetaxonomy`, and the changelog says plainly that settings and permissions reset once while files are untouched.
+- Covered: nothing needed beyond the build.
+- Gaps skipped (and why): the identifier is one line of config with no logic. A search of the app found no data stored under the identifier, so nothing can be stranded; the reset of settings is said in the changelog.
+
 ## 2026-11-11: imports in the example site, and the admin clicked through
 
 Scope: `apps/payload-example` (the `sources` upload collection, import jobs on, two seeded jobs, the throwaway uploads folder, `scripts/smoke.mjs`, the new `scripts/click-through.mjs`); and in `packages/payload`, the panels' spacing (`src/client/panels.css`) and the fields a panel already shows, now hidden in the form (`src/collections.ts`, `src/imports.ts`). Plugin tests went from 247 to 249, all unit tests from 631 to 633, the example's smoke checks from 58 to 74. The click-through has 40 checks and is not in CI.
