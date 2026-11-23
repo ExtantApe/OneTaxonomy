@@ -118,6 +118,10 @@ export function buildCss(tokens, prefix) {
     ":root[data-appearance='dark'] {",
     ...modeLines('dark', '  '),
     '}',
+    '/* Reduce motion in System Settings: nothing spins, slides or fades (design audit 2026-11-16). */',
+    '@media (prefers-reduced-motion: reduce) {',
+    '  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }',
+    '}',
     '',
   ].join('\n')
 }

@@ -3,6 +3,7 @@
 :root {
   --ot-accent: #cf8137;
   --ot-focus: #a65f20;
+  --ot-control: #7f8693;
   --ot-brand-pink: #e48185;
   --ot-structure: #4c312c;
   --ot-mauve: #91645d;
@@ -26,6 +27,7 @@
   :root:not([data-appearance='light']) {
     --ot-accent: #e7a066;
     --ot-focus: #e7a066;
+    --ot-control: #6b7485;
     --ot-brand-pink: #eda9ac;
     --ot-structure: #eda9ac;
     --ot-mauve: #c79a92;
@@ -41,6 +43,7 @@
 :root[data-appearance='dark'] {
   --ot-accent: #e7a066;
   --ot-focus: #e7a066;
+  --ot-control: #6b7485;
   --ot-brand-pink: #eda9ac;
   --ot-structure: #eda9ac;
   --ot-mauve: #c79a92;
@@ -51,4 +54,8 @@
   --ot-border: #2c3340;
   --ot-warning: #fbbf24;
   --ot-error: #f87171;
+}
+/* Reduce motion in System Settings: nothing spins, slides or fades (design audit 2026-11-16). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }

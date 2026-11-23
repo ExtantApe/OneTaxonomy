@@ -4,7 +4,7 @@
     "repo": "https://github.com/ExtantApe/OnePhylogeny",
     "branch": "main",
     "path": "docs/oneorigin",
-    "commit": "5a500a78ce67ae1999480f486b585bff0928d3f6"
+    "commit": "6c01ef1cc5c6eab0dc626d8159d23088ef522d4d"
   },
   "copy": "brand/oneorigin",
   "files": {
@@ -35,7 +35,7 @@
     "marks/onetaxonomy-dark.svg": "sha256:feaff9d12e6e554f587a2d9abbf2e3a8ad2417de1bbe5b19bec45006c7be071e",
     "marks/onetaxonomy-light.svg": "sha256:6ea4a7cee8ab0a8305068bf8d1203b41bccecc91e91a96e4959bfbf1a0f9cee2",
     "marks/onetaxonomy-small.svg": "sha256:1cc10576c0c61b96b8e686615a2c1bf77339754181a4b7cec18e57eb522449d6",
-    "tokens.json": "sha256:6765b35d5a2ad58d8466202a94fe1c33e06e97025b6139840f49d980de59dec0",
+    "tokens.json": "sha256:0927fd46e833a2f73dabed015e6ba32a5f04de56b48c9fc465becfd870e9b0f2",
     "tokens.schema.json": "sha256:e7e38666c36015eab49cb802448567137ef6e44870a335ffe34eb89ed9bea3cc"
   },
   "outputs": {
