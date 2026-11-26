@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- **CITATION.cff:** citation details for papers and GitHub's Cite this repository button, with EXTANT APE as author and the PolyForm Noncommercial license. Tested: cffconvert 2.0.0 validates it against schema 1.2.0. Not tested: Zenodo, which isn't switched on, so there's no DOI yet.
+
 - Five-tool OneOrigin palette, 2026-11-15 (D206, K656). The brand copy is relocked at OnePhylogeny 37453b0, which adds OneFamily as the fifth tool color and keeps every text color at 4.5:1 or better on white. Tested: the OneOrigin check and the full test suite. Not tested: the app screens by eye.
 
 - **New Mac app identifier:** the desktop app's identifier is now `com.extantape.onetaxonomy`. macOS treats it as a new app, so the first launch after updating starts with default settings and asks again for any permissions it needs. This happens once. Your files are untouched. The shared OneOrigin guidelines now say every tool's identifier is `com.extantape.<tool>`.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: If you use OneTaxonomy in your work, please cite it using these details.
+type: software
+title: "OneTaxonomy"
+abstract: "A source-available framework for importing, curating, browsing and publishing scientifically faithful taxonomic classifications and phylogenetic trees, with a TypeScript core, React components, a Payload plugin and a desktop studio."
+authors:
+  - name: EXTANT APE
+    website: "https://github.com/ExtantApe"
+repository-code: "https://github.com/ExtantApe/OneTaxonomy"
+url: "https://github.com/ExtantApe/OneTaxonomy#readme"
+license: PolyForm-Noncommercial-1.0.0
+keywords:
+  - taxonomy
+  - phylogeny
+  - phylogenetics
+  - classification
+  - cladogram
+  - biodiversity
+  - newick

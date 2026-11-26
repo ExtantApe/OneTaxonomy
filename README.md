@@ -75,6 +75,10 @@ Download the latest `.dmg` from this repository's [Releases](https://github.com/
 - [Phase plan](docs/architecture/phase-plan.md), [backlog](docs/architecture/backlog.md), [limitations](docs/architecture/limitations.md)
 - [Fixtures](fixtures/README.md), [releasing](RELEASING.md)
 
+## Citing
+
+If OneTaxonomy helps your research, cite it from `CITATION.cff`. GitHub's **Cite this repository** button reads the same file. There's no DOI yet.
+
 ## License
 
 [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) for the software: free for noncommercial use, with attribution; commercial use needs a separate license from EXTANT APE. This license makes OneTaxonomy source-available. It isn't an open source license. Versions published under MIT before the license changed stay under MIT. Data you import keeps its own license; OneTaxonomy records it with every snapshot.
